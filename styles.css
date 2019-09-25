@@ -237,6 +237,12 @@ body h2 {
   text-decoration: underline;
 }
 
+body li,
+body p {
+  line-height: calc(1.5em + 0.2vw);
+  word-break: break-word;
+}
+
 .post p {
   font-size: 24px;
 }
@@ -467,7 +473,7 @@ a {
   background-size: 100% 1.5px;
   background-position: center bottom 29%;
   background-origin: padding-box;
-  color: #808080;
+  color: #fff;
 }
 
 .guide-list_item a {
@@ -549,11 +555,6 @@ a {
   right: 0;
   -webkit-transform-origin: 30% 50%;
   transform-origin: 30% 50%;
-}
-
-.feature-panel-image-link::before {
-  top: 85%;
-  left: -33%;
 }
 
 @media (min-width: 1000px) {
@@ -663,12 +664,6 @@ article {
   display: block;
 }
 
-body li,
-body p {
-  line-height: calc(1.5em + 0.2vw);
-  word-break: break-word;
-}
-
 figure {
   margin: 0;
   padding: 0;
@@ -720,7 +715,7 @@ ul > li {
   margin-top: 50px;
   position: absolute;
   left: 50%;
-  margin-left: -190px;
+  margin-left: -7.8em;
   width: 15em;
   letter-spacing: -1px;
   z-index: 11;
