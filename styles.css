@@ -590,8 +590,8 @@ img {
 }
 
 *,
-::after,
-::before {
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -769,13 +769,6 @@ img {
 
 :focus {
   outline: #808080 dotted 3px !important;
-}
-
-*,
-::after,
-::before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 body li,
