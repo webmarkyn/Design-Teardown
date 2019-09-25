@@ -237,11 +237,6 @@ body h2 {
   text-decoration: underline;
 }
 
-body p {
-  line-height: calc(1.5em + 0.2vw);
-  word-break: break-word;
-}
-
 .post p {
   font-size: 24px;
 }
@@ -480,6 +475,26 @@ a {
   font-size: 20px;
 }
 
+.featured-article a {
+  background: 0 0;
+  text-shadow: none;
+  padding: 0;
+  color: inherit;
+  position: relative;
+  z-index: 1;
+}
+
+.bio-image--white a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  background-size: 100% 1.5px;
+  background-position: center bottom 29%;
+  background-origin: padding-box;
+}
+
 .feature-panel-title a,
 .feature-panel-title a:visited {
   color: #fff;
@@ -654,11 +669,6 @@ body p {
   word-break: break-word;
 }
 
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-
 figure {
   margin: 0;
   padding: 0;
@@ -670,21 +680,6 @@ figure::before {
   content: " ";
   display: table;
   clear: both;
-}
-
-a {
-  text-decoration: none;
-  padding: 10px 0;
-  background-repeat: no-repeat;
-  background-size: 100% 1.5px;
-  background-position: center bottom 29%;
-  background-origin: padding-box;
-  color: #fff;
-}
-
-h1 {
-  font-size: calc(1.625rem + 1.6vw);
-  margin: 0;
 }
 
 @media all and (min-width: 1550px) {
@@ -821,15 +816,6 @@ ul > li {
   .featured-article {
     min-width: 100%;
   }
-}
-
-.featured-article a {
-  background: 0 0;
-  text-shadow: none;
-  padding: 0;
-  color: inherit;
-  position: relative;
-  z-index: 1;
 }
 
 .featured-article:nth-of-type(3n + 1) {
@@ -1009,7 +995,6 @@ a.featured-article__comments-count {
   position: relative;
   width: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .bio-image::before {
@@ -1040,17 +1025,6 @@ a.featured-article__comments-count {
   .bio-image {
     display: block;
   }
-}
-
-.bio-image--white a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 0;
-  background-image: linear-gradient(#fff, #fff);
-  background-repeat: no-repeat;
-  background-size: 100% 1.5px;
-  background-position: center bottom 29%;
-  background-origin: padding-box;
 }
 
 a.bio-image-link {
